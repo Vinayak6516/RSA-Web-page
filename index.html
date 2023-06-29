@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>RSA Encryption</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="rsa.js"></script>
+</head>
+
+<header>
+	<h1>Encrypt & Decrypt Your Text</h1>
+</header>
+<div id="clr"></div>
+<div id="clr"></div>
+
+<body>
+	<p>
+		Here is a detailed information of RSA Algorithm for encryption:
+		<br>
+		RSA is a public-key cryptosystem that is widely used for secure data transmission. It is based on the difficulty of
+		factoring large integers. The RSA algorithm involves four steps:
+		<br>
+		<b>1. Key generation:</b> The first step is to generate the public and private keys. This is done by choosing two
+		large prime numbers, p and q, and then computing n = p * q. The public key is then the pair (e, n), where e is an
+		integer such that 1 < e < n and gcd(e, (p-1)*(q-1))=1. The private key is the integer d, where d is the modular
+			inverse of e modulo (p-1)*(q-1).<br>
+			<b>2. Key distribution.</b> The public key is then distributed to the other party, while the private key is kept
+			secret. <br>
+			<b>3. Encryption: </b>To encrypt a message, the sender uses the recipient's public key to encrypt the message.
+			This is done by raising the message to the power of e modulo n. <br>
+			<b>4. Decryption</b> To decrypt the message, the recipient uses their private key to decrypt the message. This is
+			done by raising the encrypted message to the power of d modulo n. <br>
+			The RSA algorithm is very secure because it is based on the difficulty of factoring large integers. If an attacker
+			were able to factor n, then they would be able to compute d and decrypt the messages. However, this is considered
+			to be computationally infeasible for large values of n.
+			<br>RSA is used in a variety of applications, including:
+			<ul>
+				<li>Secure Shell (SSH)</li>
+				<li>Secure Sockets Layer (SSL)</li>
+				<li>Pretty Good Privacy (PGP)</li>
+				<li>Digital signatures</li>
+			</ul>
+			RSA is a very secure and widely used encryption algorithm. It is based on a strong mathematical foundation and is
+			very difficult to break. However, it is important to note that no encryption algorithm is completely unbreakable.
+			If an attacker has enough computing power, they may eventually be able to break RSA.
+			<br>Here are some additional details about the RSA algorithm:
+			<ol>
+				<li>The key size of RSA is the length of the integers p and q. The larger the key size, the more secure the
+					algorithm is.</li>
+				<li>RSA is a deterministic algorithm, which means that the same message will always encrypt to the same
+					ciphertext. This makes it very easy to verify the authenticity of a message.</li>
+				<li>RSA is a symmetric algorithm, which means that the same key is used for encryption and decryption. This
+					makes it very easy to share keys between parties.</li>
+			</ol>
+	</p>
+	<h1 style="">
+		<b><i>This webpage was created for Presentation at TCE MEGA MODEL MAKING COMPETITION.</i></b>
+		<div class="container">
+			<textarea type="text" id="message" placeholder="Enter your message here..." /></textarea>
+			<textarea id="encrypted" readonly placeholder="Encrypted Message will be shown here"></textarea><br /><br />
+			<textarea id="decrypted" readonly placeholder="Decrypted Message will be shown here"></textarea>
+		</div>
+		<div style="margin-bottom: 20px;"></div>
+		<button onclick="encrypt()">Encrypt</button>
+		<button onclick="decrypt()">Decrypt</button>
+</body>
+
+</html>
+<div style="margin-bottom: 50px;"></div>
+</body>
+
+</html>

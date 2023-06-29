@@ -1,0 +1,52 @@
+html button {
+	background-color: green;
+	color: #004005;
+	border-radius: 10px;
+	font-size: .98em;
+	margin-right: 20px;
+	padding: 5px;
+	display inline-block;
+}
+
+button:hover {
+	color: #fff;
+}
+
+body {
+	background: url("https://miro.medium.com/v2/resize:fit:1400/1*allwgYdvx-l3M3lX8knX6Q.jpeg");
+	background-color: grey;
+	background-blend-mode: multiply;
+	background-size: 100% 100%;
+	font-style: italic;
+	color: white;
+}
+
+
+header {
+	background: url("https://e1.pxfuel.com/desktop-wallpaper/818/1015/desktop-wallpaper-abstract-iphone-check-more-at-party-abstract-dark-mobile.jpg") center fixed;
+	border: 2px black solid;
+	border-radius: 15px;
+	padding: 0px;
+	word-spacing: 0.2em;
+	text-align: center;
+	font-size: 18px;
+	width: 98%;
+	margin-left: 10px;
+	margin-top: 15px;
+	margin-bottom: 20px;
+	color: lightcyan;
+}
+
+
+textarea {
+	background: url("https://e1.pxfuel.com/desktop-wallpaper/818/1015/desktop-wallpaper-abstract-iphone-check-more-at-party-abstract-dark-mobile.jpg");
+	width: 50%;
+	height: 350px;
+	color: white;
+	font-size: 20px;
+}
+
+.container{
+	display: flex;
+	justify-content: space-between;
+}
